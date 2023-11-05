@@ -37,7 +37,7 @@ const languages = {
 const entropy = ref(generateEntropy());
 const passphraseInput = ref('');
 
-const language = ref<keyof typeof languages>('English');
+const language = ref<keyof typeof languages>('French');
 const passphrase = computed({
   get() {
     return withDefaultOnError(() => entropyToMnemonic(entropy.value, languages[language.value]), passphraseInput.value);

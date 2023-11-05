@@ -2,7 +2,7 @@ import { ArrowsShuffle } from '@vicons/tabler';
 import { defineTool } from '../tool';
 
 export const tool = defineTool({
-  name: 'Token generator',
+  name: 'token-generator' ,
   path: '/token-generator',
   description:
     'Generate random string with the chars you want: uppercase or lowercase letters, numbers and/or symbols.',

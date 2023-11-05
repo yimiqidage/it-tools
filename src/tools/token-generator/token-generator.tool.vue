@@ -20,8 +20,8 @@ const [token, refreshToken] = computedRefreshable(() =>
     withSymbols: withSymbols.value,
   }),
 );
-
-const { copy } = useCopy({ source: token, text: 'Token copied to the clipboard' });
+let message =  'Token copied to the clipboard' ;
+const { copy } = useCopy({ source: token, text: message });
 </script>
 
 <template>
@@ -67,10 +67,10 @@ const { copy } = useCopy({ source: token, text: 'Token copied to the clipboard' 
 
       <div mt-5 flex justify-center gap-3>
         <c-button @click="copy()">
-          Copy
+          {{ $t('tools.token-generator.copy') }}
         </c-button>
         <c-button @click="refreshToken">
-          Refresh
+          {{ $t('tools.token-generator.refresh') }}
         </c-button>
       </div>
     </c-card>

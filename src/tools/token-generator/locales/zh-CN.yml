@@ -1,0 +1,10 @@
+tools:
+  token-generator:
+    title: 标识符生成工具
+    description: 生成包括您所需的字符在内的随机字符串，可以包括大写或小写字母、数字和/或符号。
+    uppercase: 大写字母 (ABC...)
+    lowercase: 小写字母 (abc...)
+    numbers: 数字 (123...)
+    symbols: 符号 (!-;...)
+    copy: 复制
+    refresh: 刷新
