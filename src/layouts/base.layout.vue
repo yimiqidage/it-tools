@@ -117,7 +117,7 @@ const tools = computed<ToolCategory[]>(() => [
           <template #trigger>
             <c-button
               round
-              href="https://www.buymeacoffee.com/cthmsst"
+              href="https://ko-fi.com/yimiqi"
               rel="noopener"
               target="_blank"
               class="support-button"
